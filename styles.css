@@ -1,0 +1,418 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Section */
+.welcome-section h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Carousel Section */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-text h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.carousel-text p {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/* Bright and Noticeable Footer Styling */
+footer {
+    background-color: #2a2a72; /* Rich dark blue background for a travel-related, elegant feel */
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h4 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Bright yellow color for section headings to make them stand out */
+}
+
+.footer-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #d1e7ff; /* Softer, more readable light blue color for text */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #ffcc00; /* Bright yellow color for links */
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff; /* Change to white on hover for better visibility */
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 12px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-media a img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1); /* Ensures the social media icons are bright white */
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+    filter: brightness(1) invert(0); /* Reverts icons to original colors on hover */
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding: 25px 0;
+    background-color: #1b1b57; /* A deeper blue color for contrast with the main footer */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #ffcc00; /* Bright yellow for clear visibility */
+}
+
+/* Responsive Footer Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .footer-section ul {
+        padding: 0;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel {
+        flex-direction: column;
+    }
+
+    .carousel-item {
+        max-width: 90%;
+    }
+
+    .welcome-section h1 {
+        font-size: 2em;
+    }
+
+    .welcome-section p {
+        font-size: 1em;
+    }
+}
+/* Destination Page Styles */
+.destination-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.destination-item {
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.destination-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.destination-item p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.destination-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0044cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.destination-item a:hover {
+    background-color: #003399;
+}
+
+.destination-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Multimedia Section */
+.multimedia {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.multimedia video {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .destination-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-item {
+        width: 90%;
+    }
+}
+/* About Us Page Styles */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.about-section article {
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-section article h2 {
+    font-size: 1.8em;
+    color: #0044cc;
+    margin-bottom: 10px;
+}
+
+.about-section article p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section article {
+        padding: 15px;
+    }
+
+    .about-section article h2 {
+        font-size: 1.5em;
+    }
+
+    .about-section article p {
+        font-size: 1em;
+    }
+}
+/* Contact Page Styles */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f2f2f2;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #003399;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .form-group label {
+        font-size: 1.1em;
+    }
+
+    .submit-btn {
+        font-size: 1.1em;
+    }
+}
